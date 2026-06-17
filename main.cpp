@@ -69,10 +69,14 @@ int main()
     sf::Text scoreTxt(font, "", 30);
     scoreTxt.setPosition({600  , 10});
 
+    float passCooldown = 0.f;
+
      
     while (window.isOpen())
     {
         float deltaTime = clock.restart().asSeconds();
+        if (passCooldown > 0.f)
+            passCooldown -= deltaTime;
 
         while (auto event= window.pollEvent())
         {
@@ -105,17 +109,17 @@ int main()
 
             for (size_t i = 0; i < enemies.size(); i++)
             {
-                for (size_t j = i; j < enemies.size(); j++)
+                for (size_t j = i * 1; j < enemies.size(); j++)
                 {
                     sf::Vector2f A = enemies[i].getPosition();
                     sf::Vector2f B = enemies[j].getPosition();
 
-                    float sideBefore = (B.x - A.x) * (prevPlayerpos.x - A.y) - (B.y - A.y) * (prevPlayerpos.x - A.x);
-                    float sideAfter = (B.x - A.x) * (currPlayerPos.x - A.y) - (B.y - A.y) * (currPlayerPos.x - A.x);
-
+                    float sideBefore = sideOfLine(A, B, prevPlayerpos);
+                    float sideAfter = sideOfLine(A, B, currPlayerPos );
                     if (sideBefore * sideAfter < 0)
                     {
                         score += 10;
+                        passCooldown = 0.7f;
                     }    
                 }                
             }
