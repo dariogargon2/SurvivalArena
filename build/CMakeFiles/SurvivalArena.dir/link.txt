@@ -1,3 +1,0 @@
-C:\winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-19.1.7-mingw-w64ucrt-12.0.0-r3\mingw64\bin\cmake.exe -E rm -f CMakeFiles\SurvivalArena.dir/objects.a
-C:\winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-19.1.7-mingw-w64ucrt-12.0.0-r3\mingw64\bin\ar.exe qc CMakeFiles\SurvivalArena.dir/objects.a @CMakeFiles\SurvivalArena.dir\objects1.rsp
-C:\winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-19.1.7-mingw-w64ucrt-12.0.0-r3\mingw64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\SurvivalArena.dir/objects.a -Wl,--no-whole-archive -o SurvivalArena.exe -Wl,--out-implib,libSurvivalArena.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\SurvivalArena.dir\linkLibs.rsp

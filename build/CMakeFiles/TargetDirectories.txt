@@ -1,3 +1,0 @@
-C:/Users/Usuario/OneDrive/Escritorio/Programacion/cpp/CMAKE/Survival arena/build/CMakeFiles/SurvivalArena.dir
-C:/Users/Usuario/OneDrive/Escritorio/Programacion/cpp/CMAKE/Survival arena/build/CMakeFiles/edit_cache.dir
-C:/Users/Usuario/OneDrive/Escritorio/Programacion/cpp/CMAKE/Survival arena/build/CMakeFiles/rebuild_cache.dir
